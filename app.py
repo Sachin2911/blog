@@ -4,7 +4,7 @@ import openai
 app = Flask(__name__)
 
 # Set up your OpenAI API key
-openai.api_key = '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'
+openai.api_key = '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'
 
 # Define the home route
 @app.route('/')
@@ -36,4 +36,4 @@ def generate_ideas():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(debug=True)
